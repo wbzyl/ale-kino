@@ -33,7 +33,7 @@ oraz zmieniamy nazwę pliku:
 
 ### Seed data 
 
-W wersji 2.3.4 w katalogu *db* pojawił się plik *ssed.rb*.
+W wersji 2.3.4 w katalogu *db* pojawił się plik *seed.rb*.
 Do czego można go wykorzystać opisano na [ASCIIcasts] [seed data].
 
 Dawno temu należało wejść na konsolę, wpisać i wykonać kilka poleceń:
