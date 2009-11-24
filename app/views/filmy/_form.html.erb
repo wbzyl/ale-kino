@@ -1,0 +1,21 @@
+<%= error_messages_for :film %>
+
+<% form_for @film do |f| %>
+  <p>
+    <%= f.label :name, 'Tytuł:' %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :minutes, 'Minut:' %>
+    <%= f.text_field :minutes, :size => 5 %>
+  </p>
+  <div id="seansy">
+    <%= render :partial => 'seans', :collection => @film.seansy %>
+  </div>
+  <p>
+    <%= add_seans_link "Dodaj seans" %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>

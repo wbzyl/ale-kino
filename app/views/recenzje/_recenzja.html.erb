@@ -1,0 +1,13 @@
+<div class="recenzja">
+  <div class="name">
+    <%= display_stars(recenzja.stars) %>
+    <strong><%=h recenzja.author_name %></strong>
+  </div>
+  <div class="created_at">
+    <%= recenzja.created_at.strftime("%B %e, %Y at %H:%M") %>
+  </div>
+  <%= simple_format recenzja.content %>
+  <% if recenzja.film && current_page?(recenzje_path) %>
+    <p><em>dla <%= link_to h(recenzja.film.name), recenzja.film %></em></p>
+  <% end %>
+</div>

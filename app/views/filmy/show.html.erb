@@ -1,0 +1,43 @@
+<div id="kino">
+  <h1><%=h @film.name %></h1>
+  <div class="minutes">Czas: <%= @film.minutes %> (minut)</div>
+
+  <% unless @recenzje.length.zero? %>
+    <div class="average_stars">
+      <%= display_stars(@film.average_stars) %>
+      (<%= sprintf "%.1f", @film.average_stars %>)
+    </div>
+  <% end %>
+
+  <% unless @kina.length.zero? %>
+    <div class="kina">
+      <%= image_tag 'now_playing.gif', :size => '78x32' %>
+      <ul>
+      <% for kino in @kina %>
+        <li><%= link_to h(kino.name), kino %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p><%= link_to "Back to lista kin", kina_path %></p>
+</div>
+
+<hr />
+
+<h2><%= pluralize @recenzje.size, "Recenzja" %></h2>
+
+<p>
+  <strong>Filtr:</strong>
+  <%= link_to_unless_current "wszystkie", @kino %> |
+  <%= link_to_unless_current "mało gwiazdek", :filter => 'low' %> |
+  <%= link_to_unless_current "dużo gwiazdek", :filter => 'high' %>
+</p>
+
+<%= render :partial => @recenzje %>
+
+<hr />
+
+<h2>Dodaj recenzję</h2>
+
+<%= render :partial => 'recenzje/form' %>

@@ -1,0 +1,20 @@
+<div class="seans">
+<% fields_for_seans(seans) do |seans_form| %>
+  <h3>Seans</h3>
+  <%= error_messages_for :seans, :object => seans %>
+  <p>
+    Kino: <%= seans_form.collection_select :kino_id, Kino.all, :id, :name %>
+  </p>
+  <p>
+    Początek: <%= seans_form.date_select :starts_on,
+                    :index => (seans.new_record? ? '' : nil) %>
+  </p>
+  <p>
+    Koniec: <%= seans_form.date_select :ends_on,
+                    :index => (seans.new_record? ? '' : nil) %>
+  </p>
+  <p>
+    <%= link_to_function "usuń", "$(this).up('.seans').remove()" %>
+  </p>
+<% end %>
+</div>

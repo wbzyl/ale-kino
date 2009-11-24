@@ -1,0 +1,16 @@
+<div class="film">
+  <div class="name"><%= link_to h(film.name), film_path(film) %></div>
+  <div class="minutes">Czas: <%= film.minutes %> min.</div>
+  <% unless film.recenzje.empty? %>
+  <div class="recenzje">
+    <%= display_stars(film.average_stars) %>
+    (<%= link_to "zobacz recenzje", film_path(:id => film, :anchor => 'recenzje') %>)
+  </div>
+  <% end %>
+    <div class="actions">
+      <%= link_to "Edycja", edit_film_path(film) %> |
+      <%= link_to "Usuń", film,
+             :confirm => "Jesteś pewien że chcesz usunąć ten film?",
+             :method => :delete %>
+    </div>
+</div>

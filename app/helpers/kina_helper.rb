@@ -1,0 +1,2 @@
+module KinaHelper
+end

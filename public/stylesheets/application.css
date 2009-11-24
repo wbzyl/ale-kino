@@ -1,0 +1,133 @@
+body {
+  background-color: #DDD;
+  font-family: Verdana;
+  font-size: 13px;
+}
+
+a {
+  color: #22D;
+}
+
+a img {
+  border: none;
+}
+
+#header {
+  margin: 0px auto;
+  margin-top: 30px;
+  width: 600px;
+}
+
+#header img {
+  display: block;
+}
+
+#header h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+#main {
+  margin: 0px auto;
+  background-color: #fff;
+  width: 600px;
+}
+
+#film h1 {
+  margin-bottom: 3px;
+}
+
+.minutes {
+  color: #555;
+  font-style: italic;
+  margin: 3px 0;
+}
+
+
+.content {
+  padding: 10px 95px;
+}
+
+.clear {
+  clear: both;
+}
+
+.film {
+  margin: 14px 0;
+}
+
+.film h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.film .name {
+  font-size: 20px;
+}
+
+.stars {
+  display: inline;
+  vertical-align: -30%;
+}
+
+.stars img {
+  padding: 1px;
+}
+
+.recenzja {
+  margin: 30px 0;
+}
+
+.recenzja .created_at {
+  font-size: 11px;
+  color: #777;
+  font-style: italic;
+}
+
+.recenzja p {
+  margin: 8px 0;
+}
+
+.kina {
+  margin: 20px 0;
+}
+
+.kina ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 8px;
+}
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+#flash_notice {
+  background-color: #0a0;
+}

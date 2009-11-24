@@ -1,0 +1,12 @@
+<h1>Filmy</h1>
+
+<% form_tag filmy_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Szukaj", :name => nil %>
+  </p>
+<% end %>
+
+<%= render :partial => @filmy %>
+
+<p><%= link_to "Nowy film", new_film_path %></p>
