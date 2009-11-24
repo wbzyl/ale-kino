@@ -71,12 +71,5 @@ albo
     rake db:migrate
     rake db:seed
 
-## Zaczynamy…
-
-Teraz wchodzimy na:
-
-    http://localhost:3000  # dodajemy ze 2--3 filmy następnie przechodzimy
-    http://localhost:3000/films/1
-
 
 [seed data]: http://asciicasts.com/episodes/179-seed-data "Seed Data"
