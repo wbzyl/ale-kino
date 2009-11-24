@@ -1,4 +1,4 @@
-# KATA: Ale Kino
+# Rails kata: Ale Kino!
 
 Pomysł na tę aplikację pochodzi od Ryana Batesa.
 
