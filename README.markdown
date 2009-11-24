@@ -2,9 +2,9 @@
 
 Pomysł na tę aplikację pochodzi od Ryana Batesa.
 
-**Uwaga:** Nowe pomysły testujemy na gałęziach/odgałęzieniach.
+Wizja aplikacji: Ale kino można rozwijać na ∞ sposobów.
 
-Strona główna…
+**Uwaga:** Nowe pomysły rozwijamy na gałęziach/odgałęzieniach.
 
 
 ## Seed data 
