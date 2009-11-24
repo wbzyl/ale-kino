@@ -1,4 +1,4 @@
-# Rails kata: Ale Kino!
+# Rails kata: Ale kino!
 
 Pomysł na tę aplikację pochodzi od Ryana Batesa.
 
@@ -7,7 +7,31 @@ Wizja aplikacji: Ale kino można rozwijać na ∞ sposobów.
 **Uwaga:** Nowe pomysły rozwijamy na gałęziach/odgałęzieniach.
 
 
-## Seed data 
+## Upgrade do nowych Railsów
+
+Tylko, czy aż tyle:
+
+    rails ale-kino
+    rm -rf ale-kino/app
+    cp -r old/app ale-kino
+    cp old/public/stylesheets/application.css ale-kino/public/stylesheets/application.css
+    cp old/config/routes.rb ale-kino/config/routes.rb
+
+Edytujemy plik *config/initializers/inflections.rb*:
+
+    ActiveSupport::Inflector.inflections do |inflect|
+      inflect.irregular 'kino', 'kina'
+      inflect.irregular 'film', 'filmy'
+      inflect.irregular 'seans', 'seansy'
+      inflect.irregular 'recenzja', 'recenzje'
+    end
+
+oraz zmieniamy nazwę pliku:
+
+    mv app/controllers/application.rb app/controllers/application_controller.rb
+
+
+### Seed data 
 
 W wersji 2.3.4 w katalogu *db* pojawił się plik *ssed.rb*.
 Do czego można go wykorzystać opisano na [ASCIIcasts] [seed data].
