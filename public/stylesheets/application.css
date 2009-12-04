@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "Cyklop";
+  src: url(Cyklop-Italic.otf) format("opentype");
+  font-style: italic;
+  font-weight: normal;
+}
+
 body {
-  background-color: #DDD;
+  background-color: #091317;
   font-family: Verdana;
   font-size: 13px;
 }
@@ -25,6 +32,9 @@ a img {
 #header h1 {
   font-size: 28px;
   text-align: center;
+  font-family: Cyklop, Verdana;
+  font-weight: normal;
+  color: #FF0190;
 }
 
 #main {
@@ -46,6 +56,11 @@ a img {
 
 .content {
   padding: 10px 95px;
+}
+
+.content h1 {
+  font-family: Cyklop, Verdana;
+  font-weight: normal;
 }
 
 .clear {
